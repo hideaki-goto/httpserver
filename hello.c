@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 
 	struct sockaddr_in server;
 	int sockfd;
-	int port = (argc == 2) ? atoi(argv[1]) : 80;
+	int port = (argc == 2) ? atoi(argv[1]) : 8000;
 
 	// socket作成
 	if ((sockfd = socket(PF_INET, SOCK_STREAM, 0)) < 0) {
